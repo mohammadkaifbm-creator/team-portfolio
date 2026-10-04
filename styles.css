@@ -45,3 +45,184 @@ p {
     text-decoration: none;
     border-radius: 5px;
 }
+
+
+
+/* ===== ABOUT PAGE DESIGN ===== */
+
+.about-header {
+    background: linear-gradient(135deg, #101d3a, #2457a7, #4776c7);
+    color: white;
+    padding: 55px 20px 35px;
+    text-align: center;
+    border-bottom: 4px solid #69b7ff;
+}
+
+.about-header h1 {
+    color: white;
+    font-size: 42px;
+    margin: 0 0 12px;
+    letter-spacing: 1px;
+}
+
+.about-header p {
+    color: #e1ecff;
+    font-size: 18px;
+    margin: 0 0 22px;
+}
+
+.about-header nav {
+    background: transparent;
+    padding: 12px;
+}
+
+.about-header nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.about-header nav a:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-3px);
+}
+
+/* Main Content */
+
+.about-container {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 25px;
+}
+
+.about-section {
+    margin-bottom: 45px;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(22, 45, 85, 0.07);
+    border: 1px solid #e8edf5;
+}
+
+.about-section h2 {
+    color: #17365d;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.about-section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #3b82f6;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+.about-section p {
+    color: #536176;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Feature Cards */
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.about-card {
+    flex: 1 1 220px;
+    max-width: 320px;
+    padding: 30px 22px;
+    background: linear-gradient(145deg, #ffffff, #f0f5ff);
+    border: 1px solid #dce7f7;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(30, 64, 120, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(30, 64, 120, 0.15);
+    border-color: #8bb9ff;
+}
+
+.about-card h3 {
+    color: #2457a7;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+.about-footer {
+    background: linear-gradient(135deg, #101d3a, #2457a7);
+    padding: 24px 15px;
+    border-top: 4px solid #69b7ff;
+}
+
+.about-footer p {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .about-header {
+        padding: 35px 15px 25px;
+    }
+
+    .about-header h1 {
+        font-size: 30px;
+    }
+
+    .about-header p {
+        font-size: 16px;
+    }
+
+    .about-header nav a {
+        margin: 4px;
+        padding: 9px 12px;
+    }
+
+    .about-container {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    .about-section {
+        padding: 22px 16px;
+        margin-bottom: 25px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-card {
+        max-width: none;
+        flex-basis: 100%;
+    }
+}
